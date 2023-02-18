@@ -38,6 +38,36 @@ input{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 700px;
+  height: 200px;
+}
+.titulo h1{
+  width: 600px;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.titulo p b:nth-child(1) {
+  font-size: 20px;
+}
+.titulo b {
+  font-weight: bold;
+}
+.titulo p {
+  width: 600px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+.input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+input{
   background: #d9d9d9;
   border-radius: 12px;
   width: 100px;
@@ -89,5 +119,7 @@ input{
   font-size: medium;
   font-weight: bold;
   width: 103px;
+  margin: 10px;
+  
 }
 
