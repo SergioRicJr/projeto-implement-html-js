@@ -1,5 +1,3 @@
-/* Por favor não alterar. Para que o design continua funcional mantenha esse arquivo intocavel*/
-
 /*Adição da fonte Montserrat ao programa */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
 
@@ -9,33 +7,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-weight: var(--peso);
+  font-weight: 300;
 }
 :root {
-  --peso: 300;
-  --fundo: linear-gradient(241.29deg, #212121 10.31%, #111010 93.41%);
-  --texto: rgb(254, 254, 254);
-  --botao: linear-gradient(
-    257.91deg,
-    #c366ff 17.54%,
-    #d37fc8 54.55%,
-    #e95582 72.93%
-  );
-  --botaoTxt: rgb(255, 255, 255);
-}
-
-.white-mode:root {
-  --peso: 500;
-  --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
-  --texto: #000000;
-  --botao: linear-gradient(
-    260.02deg,
-    #a6c3e4 -4.36%,
-    #3f87dd -4.35%,
-    #7db1ef 45.09%,
-    #86bcfc 59.75%
-  );
-  --botaoTxt: white;
+  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
+  --texto: white;
+  --botao: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%);
+  --botaoTxt:white;
 }
 
 body {
@@ -58,7 +36,7 @@ label {
 }
 input{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   background: #d9d9d9;
   border-radius: 12px;
