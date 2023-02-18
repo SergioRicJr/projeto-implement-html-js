@@ -7,10 +7,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: var(--peso);
 }
 :root {
-  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
+  --peso: 300;
+  --fundo: linear-gradient(241.29deg, #212121 10.31%, #111010 93.41%);
   --texto: rgb(254, 254, 254);
   --botao: linear-gradient(
     257.91deg,
@@ -20,7 +21,9 @@
   );
   --botaoTxt: rgb(255, 255, 255);
 }
+
 .white-mode:root {
+  --peso: 500;
   --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
   --texto: #000000;
   --botao: linear-gradient(
@@ -50,7 +53,7 @@ main {
 }
 input {
   margin-top: 40px;
-  background: #d9d9d9;
+  background: var(--botaoTxt);
   border-radius: 12px;
   width: 100px;
   height: 40px;
@@ -58,7 +61,7 @@ input {
 }
 #result {
   padding: 10px;
-  background-color: #d9d9d9;
+  background-color: var(--botaoTxt);
   color: black;
   border-radius: 12px;
   margin: 10px;
