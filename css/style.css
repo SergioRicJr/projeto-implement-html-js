@@ -82,8 +82,7 @@ main {
   align-items: center;
 }
 #btnCalcular{
-  /*background: var(--botao);*/
-  background: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%) ;
+  background: var(--botao);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   margin-top: 20%;
   transition: 0.2s;
