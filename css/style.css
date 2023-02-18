@@ -12,6 +12,8 @@
 :root {
   --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
   --texto: white;
+  --botao: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%);
+  --botaoTxt:white;
 }
 
 body {
