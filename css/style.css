@@ -7,13 +7,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: var(--peso);
 }
 :root {
-  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
-  --texto: white;
-  --botao: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%);
-  --botaoTxt:white;
+  --peso: 300;
+  --fundo: linear-gradient(241.29deg, #212121 10.31%, #111010 93.41%);
+  --texto: rgb(254, 254, 254);
+  --botao: linear-gradient(
+    257.91deg,
+    #c366ff 17.54%,
+    #d37fc8 54.55%,
+    #e95582 72.93%
+  );
+  --botaoTxt: rgb(255, 255, 255);
+}
+
+.white-mode:root {
+  --peso: 500;
+  --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
+  --texto: #000000;
+  --botao: linear-gradient(
+    260.02deg,
+    #a6c3e4 -4.36%,
+    #3f87dd -4.35%,
+    #7db1ef 45.09%,
+    #86bcfc 59.75%
+  );
+  --botaoTxt: white;
 }
 
 body {
@@ -36,12 +56,6 @@ main {
   justify-content: space-around;
   align-items: center;
   margin-top: 40px;
-
-}
-.Input p{
-  font-weight: bold;
-}
-input {
   background: #d9d9d9;
   border-radius: 12px;
   width: 100px;
@@ -49,7 +63,9 @@ input {
   border-style: none;
 }
 #result {
-  background: #d9d9d9;
+  padding: 10px;
+  background-color: #d9d9d9;
+  color: black;
   border-radius: 12px;
   width: 100px;
   height: 40px;
@@ -82,4 +98,3 @@ input {
   width: 103px;
 }
 
- 
