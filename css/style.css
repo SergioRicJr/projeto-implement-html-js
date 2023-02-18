@@ -11,9 +11,26 @@
 }
 :root {
   --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
-  --texto: white;
-  --botao: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%);
-  --botaoTxt:white;
+  --texto: rgb(254, 254, 254);
+  --botao: linear-gradient(
+    257.91deg,
+    #c366ff 17.54%,
+    #d37fc8 54.55%,
+    #e95582 72.93%
+  );
+  --botaoTxt: rgb(255, 255, 255);
+}
+.white-mode:root {
+  --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
+  --texto: #000000;
+  --botao: linear-gradient(
+    260.02deg,
+    #a6c3e4 -4.36%,
+    #3f87dd -4.35%,
+    #7db1ef 45.09%,
+    #86bcfc 59.75%
+  );
+  --botaoTxt: white;
 }
 
 body {
@@ -46,4 +63,3 @@ input {
   border-radius: 12px;
   margin: 10px;
 }
-
