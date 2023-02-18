@@ -37,7 +37,6 @@ input {
   height: 40px;
   border-style: none;
 }
-
 #result {
   padding: 10px;
   background-color: #d9d9d9;
@@ -45,3 +44,4 @@ input {
   border-radius: 12px;
   margin: 10px;
 }
+
