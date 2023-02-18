@@ -31,8 +31,17 @@ main {
   box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
-input {
+.Input{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 40px;
+
+}
+.Input p{
+  font-weight: bold;
+}
+input {
   background: #d9d9d9;
   border-radius: 12px;
   width: 100px;
@@ -40,10 +49,37 @@ input {
   border-style: none;
 }
 #result {
-  padding: 10px;
-  background-color: #d9d9d9;
-  color: black;
+  background: #d9d9d9;
   border-radius: 12px;
-  margin: 10px;
+  width: 100px;
+  height: 40px;
+  border-style: none;
+  color: #111010;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Output{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#btnCalcular{
+  /*background: var(--botao);*/
+  background: linear-gradient(257.91deg, #C366FF 17.54%, #D37FC8 54.55%, #E95582 72.93%) ;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 20%;
+  transition: 0.2s;
+  color: white;
+  font-weight: bold;
+
+}
+#btnCalcular:hover{
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.5);
+  font-size: medium;
+  font-weight: bold;
+  width: 103px;
 }
 
+ 
