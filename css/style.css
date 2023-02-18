@@ -76,11 +76,11 @@ input{
   margin-right: 50px;
 }
 .inputOutput{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .Input p {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 #result {
   padding: 10px;
@@ -95,9 +95,9 @@ input{
   align-items: center;
 }
 .Input{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .Output{
   display: flex;
@@ -105,9 +105,9 @@ input{
   align-items: center;
 }
 #btnCalcular{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--botao);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   margin-top: 10%;
@@ -121,5 +121,7 @@ input{
   font-size: medium;
   font-weight: bold;
   transform: scale(110%);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.5);
+  width: 103px;
   
 }
