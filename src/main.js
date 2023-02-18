@@ -1,1 +1,1 @@
-//cole aqui seu codigo de logica
+//cole aqui seu codigo JS completo
