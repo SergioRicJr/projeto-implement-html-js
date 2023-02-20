@@ -6,7 +6,7 @@ var horas = data.getHours();
 console.log(horas);
 
 window.addEventListener("load", function () {
-  if (horas < 18) {
+  if (horas > 18) {
     html.classList.toggle("white-mode");
     body.classList.toggle("white-mode");
   }
