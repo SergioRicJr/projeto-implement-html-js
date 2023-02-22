@@ -51,7 +51,8 @@ main {
   justify-content: center;
   padding: 50px;
   width: 800px;
-  height: 500px;
+  min-height: 500px;
+  height: auto;
   box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
@@ -78,16 +79,14 @@ input {
   font-weight: bold;
 }
 .titulo p {
-  width: 600px;
+  word-break: break-all;
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
 }
-.Input {
+.inputOutput {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 2%px;
+  flex-direction: column;
 }
 input {
   background: var(--input-fundo);
@@ -96,24 +95,39 @@ input {
   height: 40px;
   border-style: none;
 }
-.inputOutput {
+.Input {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
 }
-
+.Input p{
+  padding-top: 10px;
+  font-weight: 700;
+}
+.output{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 #result {
   padding: 10px;
   background-color: var(--input-fundo);
   color: black;
   border-radius: 12px;
-  width: 100px;
-  height: 40px;
+  width: auto;
+  min-width: 100px;
+  max-width: 500px;
+  height: auto;
+  min-height: 40px;
+  word-break: break-all;
   border-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Output {
+.buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -154,7 +168,7 @@ input {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   border-style: none;
-  margin-top: 10%;
+  margin-top: 5%;
   transition: 0.2s;
   color: white;
   font-weight: 500;
