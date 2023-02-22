@@ -10,7 +10,7 @@
   font-weight: var(--peso);
 }
 :root {
-  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #111010 93.41%);
+  --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
   --texto: white;
   --botao: linear-gradient(
     257.91deg,
@@ -53,7 +53,7 @@ main {
   width: 800px;
   min-height: 500px;
   height: auto;
-  box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
 input {
@@ -79,7 +79,7 @@ input {
   font-weight: bold;
 }
 .titulo p {
-  word-break: break-all;
+  word-break: normal;
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
