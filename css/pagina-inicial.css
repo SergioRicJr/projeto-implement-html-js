@@ -17,14 +17,14 @@ body{
 }
 
 
-#todos-textarea{
+textarea{
     display: flex;
     justify-content:center;
     bottom: 500px;
     gap: 300px;
 }
 
-#todos-textarea textarea{
+textarea{
     border-radius: 10px;
     border-style: none;
     height: 350px;
@@ -32,7 +32,7 @@ body{
     resize: none;
 }
 
-#todos-textarea h1{
+h1{
     border-radius: 5px;
     border: solid  rgb(217, 217, 217);
     background-color: rgb(217, 217, 217);
