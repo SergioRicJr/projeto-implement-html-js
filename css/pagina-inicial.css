@@ -1,17 +1,58 @@
+
+
+:root{
+    --fundo: linear-gradient(45deg, rgb(0,0,0)50%, rgb(217, 217, 217));
+}
+
+
 *{
     padding: 0;
     margin: 0;
 }
 
-:root{
-    --fundo: linear-gradient(to top right, rgb(0,0,0), rgb(217, 217, 217));
-}
-
-
 body{
     background: var(--fundo);
     background-repeat: no-repeat;
     background-size: 100%;
- 
 }
+
+
+#todos-textarea{
+    display: flex;
+    justify-content:center;
+    bottom: 500px;
+    gap: 300px;
+}
+
+#todos-textarea textarea{
+    border-radius: 10px;
+    border-style: none;
+    height: 350px;
+    width: 350px;
+    resize: none;
+}
+
+#todos-textarea h1{
+    border-radius: 5px;
+    border: solid  rgb(217, 217, 217);
+    background-color: rgb(217, 217, 217);
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#caixa-html{
+    text-align: center;
+}
+
+#caixa-js{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center ;
+}
+
+
 
