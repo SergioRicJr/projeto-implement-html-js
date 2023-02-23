@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fundo: linear-gradient(to top right, rgb(0,0,0), rgb(217, 217, 217));
+}
+
+
+body{
+    background: var(--fundo);
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+}
+
