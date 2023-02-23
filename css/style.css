@@ -37,18 +37,31 @@
   --input-fundo: white;
   --peso: 500;
 }
+html {
+  height: 100vh;
+}
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--fundo);
   color: var(--texto);
 }
+
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#inicial {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 50px;
   width: 800px;
   min-height: 500px;
@@ -56,7 +69,7 @@ main {
   box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
-input {
+input,textarea {
   text-align: center;
   font-size: 1.3rem;
   display: flex;
@@ -65,20 +78,28 @@ input {
   width: 700px;
   height: 200px;
 }
-.titulo h1 {
+h1 {
   width: 600px;
-  text-align: left;
+  text-align: center;
   font-size: 28px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.titulo p b:nth-child(1) {
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p b:nth-child(1) {
   font-size: 20px;
 }
-.titulo b {
+b {
   font-weight: bold;
 }
-.titulo p {
+p {
   word-break: normal;
   text-align: justify;
   font-size: 18px;
@@ -133,7 +154,7 @@ input {
   justify-content: space-around;
   align-items: center;
 }
-#btnCalcular {
+button, input[type=submit], input[type=button] {
   width: 140px;
   height: 60px;
   display: flex;
@@ -143,7 +164,6 @@ input {
   background: var(--botao);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  margin-top: 5%;
   transition: 0.2s;
   color: white;
   font-weight: 500;
@@ -151,7 +171,7 @@ input {
   font-size: 1.3rem;
   cursor: pointer;
 }
-#btnCalcular:hover {
+button, input[type=submit], input[type=button]:hover {
   transform: scale(110%);
 }
 
