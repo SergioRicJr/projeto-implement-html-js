@@ -12,3 +12,11 @@ form.addEventListener("submit", ()=>{
     localStorage.setItem("texto-html", JSON.stringify({"content":textHTML}))
     localStorage.setItem("texto-javascript", JSON.stringify({"content": textJS}))
 })
+var data = new Date();
+var horas = data.getHours();
+
+window.addEventListener("load",function(){
+    if(horas<18)
+    html.classList.toggle("white-mode");
+    body.classList.toggle("white-mode");
+})

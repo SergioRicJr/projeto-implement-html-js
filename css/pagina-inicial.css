@@ -1,11 +1,40 @@
+ /*Adição da fonte Montserrat ao programa */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+
 :root{
-    --fundo: linear-gradient(45deg, rgb(0,0,0)50%, rgb(217, 217, 217));
+    --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
+    --texto: white;
+    --botao: linear-gradient(
+      257.91deg,
+      #c366ff 17.54%,
+      #d37fc8 54.55%,
+      #e95582 72.93%
+    );
+    --botaoTxt: white;
+    --input-fundo: white;
+    --peso: 300;
+}
+.white-mode:root {
+    --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
+    --texto: rgb(0, 0, 0);
+    --botao: linear-gradient(
+      260.02deg,
+      #a6c3e4 -4.36%,
+      #3f87dd -4.35%,
+      #7db1ef 45.09%,
+      #86bcfc 59.75%
+    );
+    --botaoTxt: rgb(3, 3, 3);
+    --input-fundo: white;
+    --peso: 500;
 }
 
-
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--peso);
 }
 
 html {
@@ -25,6 +54,8 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
+    background: var(--fundo);
+    color: var(--texto);
 }
 
 
@@ -67,8 +98,12 @@ h1{
     background: linear-gradient(270deg, #C366FF 0%, #D37FC8 50%, #E95582 100%);
     user-select: none;
     cursor: pointer;
-
 }
+#btn:hover{
+    transform: scale(110%);
+}
+
+
 
 
 
